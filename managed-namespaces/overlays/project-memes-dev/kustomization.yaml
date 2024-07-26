@@ -14,5 +14,8 @@ patches:
     name: for-replacement
   patch: |-
     - op: replace
-      path: /metadata/name
-      value: project-memes-dev
+      path: /spec/hard/cpu
+      value: 1
+    - op: replace
+      path: /spec/hard/memory
+      value: 1Gi
