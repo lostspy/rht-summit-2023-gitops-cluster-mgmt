@@ -16,3 +16,13 @@ patches:
     - op: replace
       path: /metadata/name
       value: project-memes-dev
+- target:
+    kind: ResourceQuota
+    name: resource-quota-memory-cpu-dev
+  patch: |-
+    - op: replace
+      path: /spec/hard/cpu
+      value: 1
+    - op: replace
+      path: /spec/hard/memory
+      value: 500Mi
